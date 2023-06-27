@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+	"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+	
+<tiles-definitions>
+
+	<definition name=".mobilePageTemplate" template="/WEB-INF/templates/mobilePageTemplate.jsp" />
+	
+	<definition name=".mobilePageFormTemplate" template="/WEB-INF/templates/mobilePageFormTemplate.jsp" />
+	
+	<definition name=".mobileNoMenuTemplate" template="/WEB-INF/templates/mobileNoMenuTemplate.jsp" />
+
+	<definition name=".mobileNoBorderTemplate" template="/WEB-INF/templates/mobileNoBorderTemplate.jsp" />
+
+	<definition name=".noBorderTemplate" template="/WEB-INF/templates/noBorderTemplate.jsp" />
+
+<definition name=".pageFormTemplate" template="/WEB-INF/templates/pageFormTemplate.jsp" />
+
+	<definition name="loginScreen_m" extends=".mobileNoMenuTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/login.jsp"/>
+	</definition>
+
+	<definition name="firstScreen_m" extends=".mobileNoBorderTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/firstScreen.jsp"/>
+	</definition>
+
+	<!-- master -->
+
+	<definition name="customerType_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="ประเภทลูกค้า" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/customerTypeSearch.jsp"/>
+	</definition>
+	
+	<definition name="customerType_m.form" extends=".mobilePageFormTemplate">
+		<put-attribute name="pageName" value="ประเภทลูกค้า" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/customerTypeForm.jsp"/>
+	</definition>
+	
+	<definition name="customer_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="ลูกค้า" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/customerSearch.jsp"/>
+	</definition>
+	
+	<definition name="customer_m.form" extends=".mobilePageFormTemplate">
+		<put-attribute name="pageName" value="ลูกค้า" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/customerForm.jsp"/>
+	</definition>
+	
+	<definition name="employee_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="พนักงาน" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/employeeSearch.jsp"/>
+	</definition>
+	
+	<definition name="employee_m.form" extends=".mobilePageFormTemplate">
+		<put-attribute name="pageName" value="พนักงาน" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/employeeForm.jsp"/>
+	</definition>
+	
+	<definition name="type_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="ประเภท" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/typeSearch.jsp"/>
+	</definition>
+	
+	<definition name="type_m.form" extends=".mobilePageFormTemplate">
+		<put-attribute name="pageName" value="ประเภท" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/typeForm.jsp"/>
+	</definition>
+	
+	<definition name="brand_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="ยี่ห้อ" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/brandSearch.jsp"/>
+	</definition>
+	
+	<definition name="brand_m.form" extends=".mobilePageFormTemplate">
+		<put-attribute name="pageName" value="ยี่ห้อ" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/brandForm.jsp"/>
+	</definition>
+	
+	<definition name="model_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="รุ่น" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/modelSearch.jsp"/>
+	</definition>
+	
+	<definition name="model_m.form" extends=".mobilePageFormTemplate">
+		<put-attribute name="pageName" value="รุ่น" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/modelForm.jsp"/>
+	</definition>
+	
+	<definition name="product_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="สินค้า" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/productSearch.jsp"/>
+	</definition>
+	
+	<definition name="product_m.form" extends=".mobilePageFormTemplate">
+		<put-attribute name="pageName" value="สินค้า" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/productForm.jsp"/>
+	</definition>
+	
+	<definition name="outsiteCompany_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="บริษัทนอกที่รับซ่อม" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/outsiteCompanySearch.jsp"/>
+	</definition>
+	
+	<definition name="outsiteCompany_m.form" extends=".mobilePageFormTemplate">
+		<put-attribute name="pageName" value="บริษัทนอกที่รับซ่อม" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/outsiteCompanyForm.jsp"/>
+	</definition>
+	
+		<definition name="transportCompany_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="บริษัทขนส่ง" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/transportCompanySearch.jsp"/>
+	</definition>
+	
+	<definition name="transportCompany_m.form" extends=".mobilePageFormTemplate">
+		<put-attribute name="pageName" value="บริษัทขนส่ง" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/transportCompanyForm.jsp"/>
+	</definition>
+	
+	<definition name="role_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="บทบาท" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/roleSearch.jsp"/>
+	</definition>
+	
+	<definition name="role_m.form" extends=".mobilePageFormTemplate">
+		<put-attribute name="pageName" value="บทบาท" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/roleForm.jsp"/>
+	</definition>
+	
+	<definition name="changePassword_m.form" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="เปลี่ยนรหัสผ่าน" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/master/chanagePasswordForm.jsp"/>
+	</definition>
+	
+	<!-- Repair -->
+	
+	<definition name="serviceOrder_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="ใบแจ้งบริการ" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/repair/serviceOrderSearch.jsp"/>
+	</definition>
+	
+	<definition name="serviceOrder_m.form" extends=".mobilePageFormTemplate">
+		<put-attribute name="pageName" value="ใบแจ้งบริการ" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/repair/serviceOrderForm.jsp"/>
+	</definition>
+	
+	<definition name="getServiceOrder_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="รับงานซ่อม" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/repair/getServiceOrderSearch.jsp"/>
+	</definition>
+	
+	<definition name="getServiceOrder_m.form" extends=".mobilePageFormTemplate">
+		<put-attribute name="pageName" value="รับงานซ่อม" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/repair/getServiceOrderForm.jsp"/>
+	</definition>
+	
+	<definition name="outsiteService_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="ส่งซ่อมต่อภายนอก" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/repair/outsiteServiceSearch.jsp"/>
+	</definition>
+	
+	<definition name="outsiteService_m.form" extends=".mobilePageFormTemplate">
+		<put-attribute name="pageName" value="ส่งซ่อมต่อภายนอก" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/repair/outsiteServiceForm.jsp"/>
+	</definition>
+	
+	<definition name="sentOutsiteService_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="บันทึกส่งซ่อม" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/repair/sentOutsiteServiceSearch.jsp"/>
+	</definition>
+	
+	<definition name="sentOutsiteService_m.form" extends=".mobilePageFormTemplate">
+		<put-attribute name="pageName" value="บันทึกส่งซ่อม" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/repair/sentOutsiteServiceForm.jsp"/>
+	</definition>
+	
+	<definition name="receivedOutsiteService_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="บันทึกรับของ" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/repair/receivedOutsiteServiceSearch.jsp"/>
+	</definition>
+	
+	<definition name="receivedOutsiteService_m.form" extends=".mobilePageFormTemplate">
+		<put-attribute name="pageName" value="บันทึกรับของ" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/repair/receivedOutsiteServiceForm.jsp"/>
+	</definition>
+	
+	<definition name="closeServiceOrder_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="ปิดงานซ่อม" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/repair/closeServiceOrderSearch.jsp"/>
+	</definition>
+	
+	<definition name="closeServiceOrder_m.form" extends=".mobilePageFormTemplate">
+		<put-attribute name="pageName" value="ปิดงานซ่อม" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/repair/closeServiceOrderForm.jsp"/>
+	</definition>
+	
+	<definition name="returnServiceOrder_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="คืนเครื่อง" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/repair/returnServiceOrderSearch.jsp"/>
+	</definition>
+	
+	<definition name="checkServiceOrder_m.search" extends=".noMenuTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/repair/checkServiceOrderSearch.jsp"/>
+	</definition>
+	
+	<!-- Sale -->
+	
+	<definition name="saleOrder_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="ข้อมูลการขาย" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/sale/saleOrderSearch.jsp"/>
+	</definition>
+	
+	<definition name="saleOrder_m.form" extends=".mobilePageFormTemplate">
+		<put-attribute name="pageName" value="ข้อมูลการขาย" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/sale/saleOrderForm.jsp"/>
+	</definition>
+	
+	
+	<!-- report -->
+
+	<definition name="repairReport_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="รายงานการซ่อม" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/report/repairReport.jsp"/>
+	</definition>
+
+	<definition name="numRepairReport_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="รายงานจำนวนการซ่อม" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/report/numRepairReport.jsp"/>
+	</definition>
+
+	<definition name="numRepairByEmpReport_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="รายงานเวลาที่ใช้ในการซ่อม" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/report/numRepairByEmpReport.jsp"/>
+	</definition>
+
+	<definition name="sumAmountReport_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="รายงานรายได้จากการซ่อม" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/report/sumAmountReport.jsp"/>
+	</definition>
+	
+	<definition name="countCustomerRegionReport_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="รายงานจำนวนลูกค้าที่มาซ่อมตามพื้นที่" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/report/countCustomerRegionReport.jsp"/>
+	</definition>
+
+	<definition name="numInstalledByEmpReport_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="รายงานจำนวนเครื่องที่ลงโปรแกรม" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/report/numInstalledByEmpReport.jsp"/>
+	</definition>
+
+	<definition name="numSaleByEmpReport_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="รายงานการขาย" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/report/numSaleByEmpReport.jsp"/>
+	</definition>
+
+	<definition name="issuePartReport_m.search" extends=".mobilePageTemplate">
+		<put-attribute name="pageName" value="รายงานการเบิก" type="string"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/report/issuePartReport.jsp"/>
+	</definition>
+
+</tiles-definitions>
